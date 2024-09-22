@@ -20,7 +20,7 @@ const EventInfo = () => {
   return (
     <div id="Hero2" className=" text-white flex flex-col items-stretch  lg:flex-row  p-4 lg:p-8 space-y-6 lg:space-y-0 lg:space-x-6">
       {/* Left section: Event Information */}
-      <div className="w-full relative lg:w-2/5   space-x-10 space-y-10  bg-cover rounded-lg p-4 lg:p-6 "
+      <div className="w-full relative lg:w-2/5   space-x-10 space-y-10  bg-cover rounded- p-4 lg:p-6 "
         style={{
           backgroundImage: "url('/bg-venue.png')",
            // Adjust to your actual image path
@@ -68,8 +68,8 @@ const EventInfo = () => {
           {tabs.map((tab) => (
             <button
               key={tab.value}
-              className={`flex-1 py-2 text-center text-xs sm:text-sm lg:text-lg font-bold transition-colors duration-300 ${
-                activeTab === tab.value ? "text-green-500" : "text-black"
+              className={`flex-1 py-2 text-center text-xs sm:text-sm lg:text-2xl font-semibold transition-colors duration-300 ${
+                activeTab === tab.value ? "text-green-500" : "text-gray-400"
               }`}
               onClick={() => handleTabClick(tab.value)}
             >
@@ -91,7 +91,7 @@ const EventInfo = () => {
         </div>
 
         {/* Tab Content */}
-        <div className="mt-6 text-xs sm:text-sm md:mx-10 md:text-base lg:text-lg">
+        <div className="mt-6 text-base sm:text-lg md:mx-10 md:text-base lg:text-xl">
           {activeTab === "about" && (
             <div>
               <p className="mb-5">Digital India Hack-a-thon is about coding together to solve real world problems. Students, Developers,
